@@ -25,7 +25,7 @@ func main() {
 		os.Exit(1)
 	}
 
-	cmd := exec.Command("bash", "-c", "reboot")
+	cmd := exec.Command("sh", "-c", "reboot")
 	stdout, err := cmd.Output()
 	if err != nil {
 		log.Println(err)
